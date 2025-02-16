@@ -1,1 +1,8 @@
- 
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: 'portainer'
+    static_configs:
+      - targets: ['portainer:9000'] 
